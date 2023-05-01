@@ -564,8 +564,11 @@ button {
 
 .footer-social {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+
+.footer-social-link {
+  margin-right: 120px;
 }
 
 .footer-social-media {
@@ -608,8 +611,6 @@ button {
 
 /* Footer subscribe */
 .subscribe-container {
-  align-items: center;
-  justify-content: center;
   margin-left: 80px;
 }
 .sub-title {
@@ -674,6 +675,7 @@ button {
   background-color: var(--alternative-color);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px;
 }
+
 /* ========= PORTFOLIO =========== */
 
 /* ==== HEADER PORTFOLIO ==== */
@@ -1003,6 +1005,7 @@ button {
   top: 50%;
   left: 16px;
 
+  fill: var(--primary-color);
   transform: translateY(-50%);
   transition: fill 250ms var(--animation);
   pointer-events: none;
@@ -1051,7 +1054,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
-  transition: background-color 300ms var(--animation), border-color 300ms var(--animation), background-size var(--animation) 150ms;
+  transition: background-color 300ms var(--animation), border-color 300ms var(--animation), background-size var(--animation);
   cursor: pointer;
 }
 .modal-form-agreement-box:checked {
